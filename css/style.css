@@ -1,0 +1,56 @@
+.logo{
+    object-fit: contain;
+    width: 80px;
+    height: 80px;
+}
+
+.talign{
+    text-align: justify;
+}
+
+.link{
+    text-decoration: dotted #ccc underline;
+}
+
+/* Tabs */
+.tabs {
+	display: flex;
+	/* // make sure it wraps */
+    flex-wrap: wrap;
+}
+
+.tabs label {
+	/* // Put the labels first */
+    order: 1; 
+    
+	display: block;
+    /* display: flex; */
+    width: 50%;
+    flex-grow: 0.5;
+	padding: 1rem 2rem;
+	/* margin-right: 0.2rem; */
+	cursor: pointer;
+    background: #ecfff5;
+    font-weight: bold;
+    text-align: center;
+    /* justify-content: space-around; */
+    transition: background ease 0.2s;
+}
+.tabs .tab {
+    /* Put the tabs last */
+    order: 99; 
+    flex-grow: 1;
+	width: 100%;
+	display: none;
+    padding: 1rem;
+    background: #fff;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+    background: #00e874;
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
