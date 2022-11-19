@@ -4,7 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="./scss/all.css">
 
     <link rel="stylesheet" href="./css/style.css">
 
@@ -12,7 +14,7 @@
   </head>
   <body>
     <!-- 導覽列 -->
-    <nav class="navbar navbar-expand-lg bg-light ">
+    <nav class="navbar navbar-expand-lg bg-secondary bg-opacity-20">
         <div class="container-fluid">
             <a class="navbar-brand ms-2" href="./index.html"><img src="img/logo.png" class="logo" alt="Logo 五術研究社" title="五術研究社"></a>
 
@@ -49,11 +51,77 @@
 
     <!-- Banner -->
     <img src="./img/banner.png" width="100%" alt="Banner">
-    <br><br>
+
+
+    <!-- 主打課程 -->
+    <div class="bg-indigo pt-1 pb-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <p class="fs-4">主打課程</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-10 ">
+                    <div class="row justify-content-between">
+                        <div class="col-lg-5 col-12">
+                            <div class="card border-0">
+                                <img src="./img/video.png" class="card-img-top" alt="...">
+                                <div class="card-body bg-indigo">
+                                <h5 class="card-title text-center">主打課程名稱 1</h5>
+                                <p class="card-text text-center">NTD 999</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-12 mt-lg-0 mt-md-3 mt-4">
+                            <div class="card border-0">
+                                <img src="./img/video.png" class="card-img-top" alt="...">
+                                <div class="card-body bg-indigo">
+                                <h5 class="card-title text-center">主打課程名稱 2</h5>
+                                <p class="card-text text-center">NTD 999</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
+        <!-- 目前開立課程 -->
+        <div class="row justify-content-center mt-5 g-lg-5">
+            <div class="col-lg-10 col-11 row">
+                <p class="fs-4 mb-lg-3">目前開立課程：</p>
+                <div class="col-lg-6">   
+                    <b>中醫</b>
+                    <ul class="mb-5 lh-lg">
+                        <li >古典針灸基礎班(12堂課 30000)一堂課3小時</li>
+                        <li>古典針灸進階班(12堂課 40000) 一堂課3小時</li>
+                        <li>康治本傷寒論(15堂課 45000) 一堂課2小時</li>
+                        <li>金匱要略(20堂課 50000) 一堂課2小時</li>
+                        <li>伏氣溫病學(20堂課 55000) 一堂課2小時</li>
+                    </ul>
+                </div>
+            
+                <div class="col-lg-6">  
+                    <b>吠陀占星</b>
+                    <ul class="lh-lg">
+                        <li>吠陀占星基礎班(18堂課 45000)</li>
+                        <li>吠陀占星中階班(18堂課 55000)</li>
+                        <li>吠陀占星高階班(18堂課 60000)</li>
+                        <li>金融占星(18堂課 55000)需有中階班基礎</li>
+                        <li>吠陀占星擇日(12堂課 35000) 需有中階班基礎</li>
+                        <li>吠陀占星合盤(12堂課 35000) 需有中階班基礎</li>
+                        <li>吠陀占星祓禊(12堂課 35000) 需有中階班基礎</li>
+                        <li>吠陀占星楊特拉(8堂課 25000) 需有初階班基礎</li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+
         <!-- 最新消息 -->
-        <div class="row">
+        <div class="row my-5 ">
             <div class="col-10 offset-1">
                 <table class="table table-striped table-borderless table-sm caption-top">
                     <caption class="fs-4 text-black">最新消息：</caption>
@@ -66,107 +134,54 @@
                         <td>新課程上線！</td>
                     </tr>
                 </table>
-                <br><br>
             </div>     
         </div> 
 
         <!-- 站主簡介 -->
-        <div class="row">
-            <div class="col-10 offset-1">
-                <p class="fs-4">站主簡介</p>
-            </div>
-        </div>
-        <div class="row gx-lg-4 justify-content-center">
-            <div class="col-lg-5 col-10">
-                <img class="img-fluid" src="./img/profile.png" alt="">
-            </div>
-
-            <div class="col-lg-5 col-10 justify-content-end">
-                <p class="talign">
-                    文老師自學生時期便開始學習五術，致力於五術教學十餘年，中醫醫術－針灸傳承自古法針灸、董氏奇穴和山西派鍼法；脈學傳承自萬氏的太素脈學；內科傳承各家如經方、溫病、伏氣學派等多位老師，祝由傳承自西河派和軒轅派，命學目前以吠陀占星Jyotish為主，師從Komilla、Joni patry、Marc Boney等國際大家還有十數位印度吠陀占星大師；風水承襲自蔣氏三元玄空風水、吠陀Vastu和龍門八局，另外老師尚通道家奇門遁甲、大六壬、太乙神數三式之學、梅花易數，以及是為熊氏太極拳傳人及華佗門第八十代傳人，另外西方之學尚有西洋古典行星護符魔法、北歐魔法等皆是師從大家。
-                </p>
-                
-                <div class="text-center">
-                    <img src="./img/fb.png" alt="" width="30" height="30">
+        <div class="my-5">
+            <div class="row">
+                <div class="col-10 offset-1">
+                    <p class="fs-4">站主簡介</p>
                 </div>
             </div>
-        </div>
-        <br><br>
+            <div class="row gx-lg-4 justify-content-center">
+                <div class="col-lg-5 col-10">
+                    <img class="img-fluid" src="./img/profile.png" alt="">
+                </div>
 
-        <!-- 主打課程 -->
-        <div class="row">
-            <div class="col-10 offset-1">
-                <p class="fs-4">主打課程</p>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-10 ">
-                <div class="row justify-content-between">
-                    <div class="col-lg-5 col-12">
-                        <div class="card border-0">
-                            <img src="./img/video.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title text-center">主打課程名稱 1</h5>
-                            <p class="card-text text-center">NTD 999</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 col-12">
-                        <div class="card border-0">
-                            <img src="./img/video.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                            <h5 class="card-title text-center">主打課程名稱 2</h5>
-                            <p class="card-text text-center">NTD 999</p>
-                            </div>
-                        </div>
+                <div class="col-lg-5 col-10 justify-content-end mt-lg-0 mt-3">
+                    <p class="talign lh-lg bg-indigo py-2 px-4 rounded">
+                        <span class="display-5">文</span> 老師自學生時期便開始學習五術，致力於五術教學十餘年，中醫醫術－針灸傳承自古法針灸、董氏奇穴和山西派鍼法；脈學傳承自萬氏的太素脈學；內科傳承各家如經方、溫病、伏氣學派等多位老師，祝由傳承自西河派和軒轅派，命學目前以吠陀占星Jyotish為主，師從Komilla、Joni patry、Marc Boney等國際大家還有十數位印度吠陀占星大師；風水承襲自蔣氏三元玄空風水、吠陀Vastu和龍門八局，另外老師尚通道家奇門遁甲、大六壬、太乙神數三式之學、梅花易數，以及是為熊氏太極拳傳人及華佗門第八十代傳人，另外西方之學尚有西洋古典行星護符魔法、北歐魔法等皆是師從大家。
+                    </p>
+                    
+                    <div class="text-center">
+                        <img src="./img/fb.png" alt="" width="30" height="30">
                     </div>
                 </div>
             </div>
         </div>
-        <br><br>
 
-        <!-- 學會特色 -->
+
+        <!-- 學會創立沿革 -->
         <div class="row justify-content-center">
             <div class="col-10 ">
                 <p class="fs-4">學會創立沿革</p>
-                <p class="talign">
-                    2008年，當時文老師在內湖高中任教，部分同事和學生知曉文老師傳承自古老的醫術，便欲向其學習，但老師當時並未想開課授徒，一方面是其老師們尚在世，二方面是覺得自己尚未成熟，故以五術研究社這種讀書會模式帶領眾人學習，不收學費為眾人解惑，直到2014在湖南攻讀中醫內科學研究所，同儕紛紛希望向文老師學習師承，加上傳授針灸和內科給文老師的老師們都過世了，文老師才開始決定開課陸續至今。
+                <p class="talign lh-lg">
+                    <span class="display-5">2008</span>年，當時文老師在內湖高中任教，部分同事和學生知曉文老師傳承自古老的醫術，便欲向其學習，但老師當時並未想開課授徒，一方面是其老師們尚在世，二方面是覺得自己尚未成熟，故以五術研究社這種讀書會模式帶領眾人學習，不收學費為眾人解惑，直到2014在湖南攻讀中醫內科學研究所，同儕紛紛希望向文老師學習師承，加上傳授針灸和內科給文老師的老師們都過世了，文老師才開始決定開課陸續至今。
                 </p>
-                <p class="talign">
+                <p class="talign lh-lg mt-5">
                     蔣氏玄空風水執業班(24堂課 100000元) 一堂課2小時，含一堂課外實習。
                     (此為主打課程 年底會開課)<br>
                     蔣氏玄空風水乃風水派別中，最重視理氣和形勢並用的一門相當精準的風水科學，為明末清初風水大師蔣大鴻傳下，文老師有幸和幾位玄空風水不同派別的老師們學習，同時也兼習了其他三合、九星、大卦派等風水，最後將以上派別的優點及合而成此課程，良好的風水可以使家庭收入增加，人丁健康，不好的風水小至收入減少，大致家破人亡，在選擇居家風水，實在不可不慎，此課程中，會將蔣氏所有理論和實際運用方式毫無保留的交出，並且會帶上幾堂弧角天星擇日，在玄空風水祖師蔣大鴻先生的著作中有提到【真龍大地遍江南，也要天時一力參】，這說明了擇日的重要性，也就是提到風水，是不可能不同時談到擇日的，在此課程中所教學的擇日是諸家擇日中最高端的弧角天星，也是最符合星象的一門學問，原應該另外再設一門課程，但老師就在此課程中一並附上。
                 </p>
-                <br>                
-                <h5>目前開立課程：</h5>
-                <b>中醫</b> <br>
-                <ul>
-                    <li>古典針灸基礎班(12堂課 30000)一堂課3小時</li>
-                    <li>古典針灸進階班(12堂課 40000) 一堂課3小時</li>
-                    <li>康治本傷寒論(15堂課 45000) 一堂課2小時</li>
-                    <li>金匱要略(20堂課 50000) 一堂課2小時</li>
-                    <li>伏氣溫病學(20堂課 55000) 一堂課2小時</li>
-                </ul>
-                <br>
-                <b>吠陀占星</b><br>
-                <ul>
-                    <li>吠陀占星基礎班(18堂課 45000)</li>
-                    <li>吠陀占星中階班(18堂課 55000)</li>
-                    <li>吠陀占星高階班(18堂課 60000)</li>
-                    <li>金融占星(18堂課 55000)需有中階班基礎</li>
-                    <li>吠陀占星擇日(12堂課 35000) 需有中階班基礎</li>
-                    <li>吠陀占星合盤(12堂課 35000) 需有中階班基礎</li>
-                    <li>吠陀占星祓禊(12堂課 35000) 需有中階班基礎</li>
-                    <li>吠陀占星楊特拉(8堂課 25000) 需有初階班基礎</li>
-                </ul>
             </div>
         </div>
     </div>
-    <br><br><br>
+
 
     <!-- 頁尾 -->
-    <div class="footer">
-        <p class="text-center fs-6">
+    <div class="footer pt-3 pb-2 bg-secondary bg-opacity-20 mt-5">
+        <p class="text-center fs-6 ">
             <a class="link-dark link" href="./refund_policy.html">聯絡我們</a>
              ︱ 
             <a class="link-dark link" href="./refund_policy.html">退款政策</a>
@@ -179,7 +194,6 @@
         <p class="text-center fs-6">© 五術研究社 2022</p>
     </div>
 
-
-  </body>
+    </body>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </html>
