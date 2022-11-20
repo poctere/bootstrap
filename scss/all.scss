@@ -5,22 +5,30 @@
 :root {
     --bs-indigo-rgb: 102, 16, 242;
 }
-
+ 
 .bg-indigo {
-    --bs-bg-opacity: 0.1;
+    --bs-bg-opacity: 1;
     background-color: rgba(var(--bs-indigo-rgb), var(--bs-bg-opacity)) !important;
 }
+
+.bg-indigo-light {
+    background-color: rgb(227, 209, 255) !important;
+  }
+  
 
 // 新增透明度 0.2
 .bg-opacity-20 {
     --bs-bg-opacity: 0.2;
 }
 
-// 新增padding 6
-.ps-6 {
-    padding-left: 2rem !important;
+.bg-opacity-10 {
+    --bs-bg-opacity: 0.1;
 }
 
-.pe-6 {
-    padding-right: 4rem !important;
+.top-10px {
+    top: 10px !important;
+  }
+
+.start-25px {
+    left: 25px !important;
 }
