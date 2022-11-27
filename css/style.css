@@ -13,7 +13,7 @@
 }
 
 
-/* Tabs */
+/* Tabs - login頁面 */
 .tabs {
 	display: flex;
 	/* // make sure it wraps */
@@ -54,4 +54,8 @@
 }
 .tabs input[type="radio"]:checked + label + .tab {
 	display: block;
+}
+
+.aaa{
+    vertical-align: middle;
 }
